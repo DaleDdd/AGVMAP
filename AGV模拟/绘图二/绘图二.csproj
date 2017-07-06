@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{923EA6F4-180E-41BE-A8EE-548822C6D948}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>绘图二</RootNamespace>
+    <AssemblyName>绘图二</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AGVLable\AGVClass.cs" />
+    <Compile Include="CartoonClass\CartoonClass.cs" />
+    <Compile Include="Comport\ComClass.cs" />
+    <Compile Include="Config\Config.cs" />
+    <Compile Include="Draw.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\ListClass.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Path\PathClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV10off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV10on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV10sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV11off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV11on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV11sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV12off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV12on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV12sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV13off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV13on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV13sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV1off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV1on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV1sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV2off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV2on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV2sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV3off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV3on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV3sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV4off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV4on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV4sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV5off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV5on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV5sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV6off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV6on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV6sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV7off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV7on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV7sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV8off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV8on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV8sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV9off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV9on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGV9sby.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backgroud01.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroud02.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BcurrentPT.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bstate.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btarget.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bvelocity.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num10g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num10r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num11g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num11r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num12g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num12r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num13g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num13r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num1g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num1r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num2g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num2r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num3g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num3r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num4g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num4r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num5g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num5r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num6g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num6r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num7g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num7r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num8g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num8r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num9g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Num9r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\run.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target10d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target10u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target11d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target11u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target12d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target12u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target1d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target1u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target2d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target2u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target3d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target3u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target4d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target4u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target5d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target5u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target6d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target6u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target7d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target7u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target8d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target8u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target9d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target9u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
